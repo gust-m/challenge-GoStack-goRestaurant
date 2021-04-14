@@ -264,7 +264,7 @@ describe('Dashboard', () => {
       fireEvent.click(getByTestId('remove-food-1'));
     });
 
-    expect(getByTestId('foods-list')).toBeEmpty();
+    expect(getByTestId('foods-list')).toBeEmptyDOMElement();
   });
 
   it('should be able to update the availibility of a food plate', async () => {
